@@ -1,0 +1,47 @@
+# calculator
+def add(a, b):
+    "this function adds two numbers"
+    return a + b
+
+
+def subtract(a, b):
+    "this function subtracts two numbers"
+    return a - b
+
+
+def multiply(a, b):
+    "this function multiplies two numbers"
+    return a * b
+
+
+def divide(a, b):
+    "this function divides two numbers"
+    return a / b
+
+
+print ("select operation")
+print ("1.add")
+print ("2.subtract")
+print ("3.multiply")
+print ("4.divide")
+
+operation = input("Enter name of operation (1/2/3/4):")
+print type(operation)
+
+number1 = int(input("Enter first number: "))
+number2 = int(input("Enter second number: "))
+
+if operation == '1':
+    print "%s + %s = %s" (number1, number2, add(number1, number2))
+
+elif operation == '2':
+    print "%s - %s = %s" (number1, number2, subtract(number1, number2))
+
+elif operation == '3':
+    print "%s * %s = %s" (number1, number2, multiply(number1, number2))
+
+elif operation == '4':
+    print "%s / %s = %s" (number1, number2, divide(number1, number2))
+
+else:
+    print("Invalid operation")
